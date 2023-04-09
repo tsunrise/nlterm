@@ -1,6 +1,11 @@
 # `nlterm`: Integrate ChatGPT in your terminal
 
-A simple example
+# Install
+```
+pip install nlterm
+```
+
+# Example
 
 ````
 > nlterm
@@ -15,5 +20,3 @@ touch pyproject.toml
 ```
 Execute? (y/n): y
 ````
-
-Need I say more?
