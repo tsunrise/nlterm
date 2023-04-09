@@ -1,11 +1,11 @@
-# `nlterm`: Integrate ChatGPT in your terminal
+# `nlterm`: Integrate ChatGPT into your terminal
 
-# Install
+## Install
 ```
 pip install nlterm
 ```
 
-# Example
+## Examples
 
 - Example 1
 ````
