@@ -35,3 +35,18 @@ pip install nlterm-0.0.2-py3-none-any.whl
 ```
 Execute? (y/n): 
 ````
+
+- Example 3
+Suppose we have files `Chest_xray_report.pdf` and `immunization.pdf` in the current directory.
+
+````
+> nlterm
+Instruction: merge my chest ray report and immunization
+````
+This is the output:
+````
+```
+pdftk Chest_xray_report.pdf immunization.pdf output merged_file.pdf
+```
+Execute? (y/n): 
+````
