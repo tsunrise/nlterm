@@ -101,18 +101,22 @@ def main_func():
     current_shell = current_shell_name()
     ls = get_ls()
     # Get instruction interactively
-    instruction = input("Instruction: ")
-    prompt = get_prompt(current_shell, ls, instruction)
-    completion = get_completion(prompt)
-    completion = completion["choices"][0]["message"]["content"]
-    commands, commands_line_numbers = extract_command_from_completion(completion)
-    print_completion_with_color(completion, commands_line_numbers)
+    try:
+        instruction = input("Instruction: ")
+        prompt = get_prompt(current_shell, ls, instruction)
+        completion = get_completion(prompt)
+        completion = completion["choices"][0]["message"]["content"]
+        commands, commands_line_numbers = extract_command_from_completion(completion)
+        print_completion_with_color(completion, commands_line_numbers)
 
-    # ask for execution
-    execute = input("Execute? (y/n): ")
-    if execute == "y":
-        for command in commands:
-            os.system(command)
+        # ask for execution
+        execute = input("Execute? (y/n): ")
+        if execute == "y":
+            for command in commands:
+                os.system(command)
+    except KeyboardInterrupt:
+        print()
+        return
 
 if __name__ == "__main__":
     main_func()

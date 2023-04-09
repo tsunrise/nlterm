@@ -12,3 +12,6 @@ classifiers = ["Programming Language :: Python :: 3"]
 
 [project.scripts]
 nlterm = "nlterm:main"
+
+[project.urls]
+homepage = "https://github.com/tsunrise/nlterm"
