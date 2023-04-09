@@ -31,7 +31,9 @@ def get_os():
     """
     Get the OS name.
     """
-    return os.uname().sysname
+    import platform
+    return platform.system()
+
 
 def get_username():
     """

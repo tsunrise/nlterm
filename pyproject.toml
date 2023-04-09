@@ -1,12 +1,12 @@
 [project]
 name = "nlterm"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{ name = "Tom Shen", email = "me@tomshen.io" }]
 requires-python = ">=3.7"
 description = "Terminal with ChatGPT integration"
 readme = "README.md"
 
-dependencies = ["openai"]
+dependencies = ["openai", "platform"]
 
 classifiers = ["Programming Language :: Python :: 3"]
 
